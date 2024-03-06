@@ -1,13 +1,16 @@
 *{
     padding: 0;
-    margin: 0;
     box-sizing: border-box;
-
+    margin: 0;
+    background-color: black;
+    color: #fff;
 }
 
 
+
+
 .navbar {
-    background-color: #000;
+    background-color: black;
     
 }
 
@@ -22,3 +25,19 @@
     color: #fff;
 }
 
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.hero-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.carousel {
+    flex: 1;
+}
