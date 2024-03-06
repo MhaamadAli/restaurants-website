@@ -23,3 +23,28 @@ function updateRestaurant(restaurantId, updatedData) {
         console.error('Restaurant not found');
     }
 }
+
+
+function displayAllRestaurants() {
+    const users = getData('users') || [];
+
+    const favoritesCounter = {};
+    users.forEach(user => {
+        user.favorites.forEach(restaurantId => {
+            favoritesCounter[restaurantId] = (favoritesCounter[restaurantId] || 0) + 1;
+        });
+    });
+
+    const galleryElement = document.getElementById('restaurant-gallery-admin');
+    galleryElement.innerHTML = '';
+    restaurants.forEach(restaurant => {
+        const card = document.createElement('div');
+        card.classList.add('restaurant-card');
+        card.innerHTML = `
+            <h2>${restaurant.name}</h2>
+            <p><strong>Location:</strong> ${restaurant.location}</p>
+            <p><strong>Number of Favorites:</strong> ${favoritesCounter[restaurant.id] || 0}</p>
+            <button onclick="viewRestaurant(${restaurant.id})">View Menu</button>`;
+        galleryElement.appendChild(card);
+    });
+}

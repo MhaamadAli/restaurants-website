@@ -24,7 +24,8 @@ let restaurants = [
         menu: [
             { item: "Item 1", price: 10 },
             { item: "Item 2", price: 15 },
-        ]
+        ],
+        favoritesCount: 0
     },
     {
         id: 2,
@@ -33,7 +34,8 @@ let restaurants = [
         menu: [
             { item: "Item 1", price: 12 },
             { item: "Item 2", price: 18 },
-        ]
+        ],
+        favoritesCount: 0
     },
 ];
 
