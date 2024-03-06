@@ -18,17 +18,18 @@ function generateRestaurantCards(restaurantsData) {
     });
 }
 
+function viewRestaurant(restaurantId) {
+
+    window.location.href = `/pages/restaurant.html?id=${restaurantId}`
+}
 
 
 function initRestaurantGallery() {
     const restaurantsData = getData('restaurants');
-
-    // Check if restaurantsData is null
     if (restaurantsData !== null) {
         generateRestaurantCards(restaurantsData);
     } else {
         console.log('No restaurant data found in local storage');
-        // Handle the case where no data is found, e.g., display a message to the user
     }
 }
 
