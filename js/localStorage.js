@@ -14,6 +14,7 @@ let users = [
         role: "user"
     },
 ];
+//saveData('users', users)
 
 // Restaurants Data
 let restaurants = [
@@ -21,6 +22,7 @@ let restaurants = [
         id: 1,
         name: "khaliefeh",
         location: "beirut",
+        image: "./styles/assets/sushi.png",
         menu: [
             { item: "Item 1", price: 10 },
             { item: "Item 2", price: 15 },
@@ -31,6 +33,7 @@ let restaurants = [
         id: 2,
         name: "Restaurant 2",
         location: "Location 2",
+        image: "./styles/assets/image-asset.png",
         menu: [
             { item: "Item 1", price: 12 },
             { item: "Item 2", price: 18 },
@@ -38,7 +41,7 @@ let restaurants = [
         favoritesCount: 0
     },
 ];
-
+saveData('restaurants', restaurants)
 
 
 function saveData(key, data) {
@@ -55,3 +58,6 @@ function getData(key) {
 function clearData(key) {
     localStorage.removeItem(key);
 }
+
+
+// localStorage.clear()
