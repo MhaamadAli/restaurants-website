@@ -2,6 +2,23 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 
+
+.navbar {
+    background-color: #000;
+    
+}
+
+.navbar-brand {
+    color: #fff;
+    height: 110px;
+    width: 130px;
+
+}
+
+.nav-link {
+    color: #fff;
+}
 
