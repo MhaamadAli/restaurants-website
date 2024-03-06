@@ -9,3 +9,12 @@ function loginUser(userName, password) {
         return false
     }
 }
+
+function isAuthenticated() {
+    return !!getData('authenticatedUser');
+}
+
+
+function logoutUser() {
+    clearData('authenticatedUser');
+}
