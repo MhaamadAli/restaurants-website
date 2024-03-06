@@ -14,7 +14,7 @@ let users = [
         role: "user"
     },
 ];
-//saveData('users', users)
+saveData('users', users)
 
 // Restaurants Data
 let restaurants = [
