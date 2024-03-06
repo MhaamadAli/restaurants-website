@@ -40,3 +40,38 @@ function addToFavorites(restaurantId) {
     }
 }
 
+
+function updateFavoriteButtons(restaurantId) {
+    const addToFavoritesButton = document.getElementById('add-to-favorites');
+    const removeFromFavoritesButton = document.getElementById('remove-from-favorites');
+
+    if (isRestaurantInFavorites(restaurantId)) {
+        addToFavoritesButton.style.display = 'none';
+        removeFromFavoritesButton.style.display = 'block';
+    } else {
+        addToFavoritesButton.style.display = 'block';
+        removeFromFavoritesButton.style.display = 'none';
+    }
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const restaurantId = parseInt(urlParams.get('id'));
+    updateFavoriteButtons(restaurantId);
+});
+
+
+document.getElementById('add-to-favorites').addEventListener('click', function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const restaurantId = parseInt(urlParams.get('id'));
+    addToFavorites(restaurantId);
+    updateFavoriteButtons(restaurantId);
+});
+
+document.getElementById('remove-from-favorites').addEventListener('click', function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const restaurantId = parseInt(urlParams.get('id'));
+    removeFromFavorites(restaurantId);
+    updateFavoriteButtons(restaurantId);
+});
