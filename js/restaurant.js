@@ -1,10 +1,10 @@
-// Fetch restaurant data from local storage
-const restaurants = getData('restaurants')
-// Function to generate HTML for restaurant cards
-function generateRestaurantCards(restaurants) {
+const restaurantsData = getData('restaurants')
+
+
+function generateRestaurantCards(restaurantsData) {
     const galleryElement = document.getElementById('restaurant-gallery')
     galleryElement.innerHTML = ''
-    restaurants.forEach(restaurant => {
+    restaurantsData.forEach(restaurant => {
         const card = document.createElement('div')
         card.classList.add('restaurant-card')
         card.innerHTML = `
@@ -16,10 +16,9 @@ function generateRestaurantCards(restaurants) {
 }
 
 
-// Function to filter restaurants by location
+function initRestaurantGallery() {
+    generateRestaurantCards(restaurantsData);
+}
 
 
-// Function to initialize restaurant gallery
-
-
-// Call initRestaurantGallery function when the page loads
+document.addEventListener('DOMContentLoaded', initRestaurantGallery);
