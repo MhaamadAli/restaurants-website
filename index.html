@@ -7,6 +7,7 @@
     <title>FOOD MOOD</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/restaurants.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     
@@ -36,11 +37,11 @@
         </div>
     </nav>
     <div class="hero-section">
-    <div class="hero-content">
-      <h1>READY FOR A MOOD TWIST?</h1>
-      <p>Welcome to FOOD MOOD, where TASTE meets SATISFACTION!</p>
-  </div>
-  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="hero-content">
+            <h1>READY FOR A MOOD TWIST?</h1>
+            <p>Welcome to FOOD MOOD, where TASTE meets SATISFACTION!</p>
+        </div>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
           <div class="carousel-item active">
               <img src="styles/assets/image-asset.png" class="d-block w-100" alt="...">
@@ -61,16 +62,26 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
       </a>
-  </div>
-</div>
+        </div>
+    </div>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <div class="container mt-5">
+        <h2 class="p-3">Discover Our Restaurants</h2>
+        <div id="restaurant-gallery" class="row mt-3 p-5">
+            <!-- Restaurant cards will be dynamically added here -->
+        </div>
+    </div>
+
+
+    <script src="./js/auth.js"></script>
+    <script src="./js/localStorage.js"></script>
+    <script src="./js/restaurants.js"></script>
+    <script src="./js/auth.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
-
-
 </html>
 
 
