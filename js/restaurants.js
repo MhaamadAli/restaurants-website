@@ -1,14 +1,14 @@
-const restaurantsData = getData('restaurants')
 
 
 function generateRestaurantCards(restaurantsData) {
+
     const galleryElement = document.getElementById('restaurant-gallery')
     galleryElement.innerHTML = ''
     restaurantsData.forEach(restaurant => {
         const card = document.createElement('div')
         card.classList.add('card') 
         card.innerHTML = `
-            <img src="./styles/assets/sushi.png" class="card-img-top" alt="${restaurant.name}">
+            <img src="${restaurant.image}" class="card-img-top" alt="${restaurant.name}">
             <div class="card-body">
             <h2 class="card-title" >${restaurant.name}</h2>
             <p class="card-text"><strong>Location:</strong> ${restaurant.location} </p>
@@ -21,7 +21,15 @@ function generateRestaurantCards(restaurantsData) {
 
 
 function initRestaurantGallery() {
-    generateRestaurantCards(restaurantsData);
+    const restaurantsData = getData('restaurants');
+
+    // Check if restaurantsData is null
+    if (restaurantsData !== null) {
+        generateRestaurantCards(restaurantsData);
+    } else {
+        console.log('No restaurant data found in local storage');
+        // Handle the case where no data is found, e.g., display a message to the user
+    }
 }
 
 
