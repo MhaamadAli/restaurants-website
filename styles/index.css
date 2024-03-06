@@ -43,6 +43,12 @@
 }
 
 
+.footer {
+    text-align: right;
+    padding-left: 30px;
+}
+
+
 /* styles for the restaurant cards: landing page */
 .card {
     border: 1px solid #ccc;
