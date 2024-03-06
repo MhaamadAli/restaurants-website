@@ -8,7 +8,7 @@ let users = [
     },
     {
         id: 2,
-        username: "user1",
+        username: "mariam",
         password: "user1password",
         favorites: [],
         role: "user"
@@ -38,18 +38,18 @@ let restaurants = [
 ];
 
 
-// Function to save data to local storage
+
 function saveData(key, data) {
     localStorage.setItem(key, JSON.stringify(data));
 }
 
-// Function to retrieve data from local storage
+
 function getData(key) {
     const data = localStorage.getItem(key);
     return data ? JSON.parse(data) : null;
 }
 
-// Function to clear data from local storage
+
 function clearData(key) {
     localStorage.removeItem(key);
 }
