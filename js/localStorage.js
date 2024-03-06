@@ -19,8 +19,8 @@ let users = [
 let restaurants = [
     {
         id: 1,
-        name: "Restaurant 1",
-        location: "Location 1",
+        name: "khaliefeh",
+        location: "beirut",
         menu: [
             { item: "Item 1", price: 10 },
             { item: "Item 2", price: 15 },
