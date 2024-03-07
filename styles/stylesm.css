@@ -22,9 +22,9 @@ body {
     border-radius: 5px;
   }
   
-  .restaurant-image .placeholder {
-    width: 450px;
-    height: 200px;
+   img{
+    width: 550px;
+
     background-color: #fff; /* white square */
   }
   
@@ -65,8 +65,13 @@ body {
     height: 100px;
     background-color: #fff; /* white square */
   }
+    
+  .menu-item .placeholder img {
+    width: 100px;
+  }
   
-  .menu-item p {
+  .menu-item li {
+    list-style: none;
     margin: 5px 0;
   }
   

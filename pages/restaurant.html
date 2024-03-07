@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FOOD MOOD</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../stylesm.css">
+    
+    
     <link rel="stylesheet" href="../styles/index.css">
     <link rel="stylesheet" href="../styles/restaurants.css">
     <link rel="stylesheet" href="../styles/stylesu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
+    <link rel="stylesheet" href="../styles/restaurant.css">
+    <link rel="stylesheet" href="../styles/stylesm.css">
 
     
 </head>
@@ -37,13 +39,13 @@
     </nav>
 
    
-            <section class="restaurant-section">
+    <section class="restaurant-section">
                 <div class="restaurant-info">
                   <h1 id="restaurant-name"></h1>
                   <p id="restaurant-location"></p>
                 </div>
                 <div class="restaurant-image" id="restaurant-image">
-                  <div class="placeholder"><img class="" src="../styles/assets/leila-restaurant.png" alt=""></div>
+                  <!-- resto image from js -->
                 </div>
               </section>
             
@@ -51,32 +53,21 @@
                 <section class="menu-section">
                   <h2>Menu</h2>
                   
-    
                   
                   <div class="menu-category">
                     <h3>Breakfast</h3>
                     <div class="menu-items">
-                      <div class="menu-item">
-                        <div class="placeholder"></div>
+                      <div class="menu-item" id="menu-list">
+                        <div class="placeholder" id="restaurant-image">
+                          <!-- resto image from js -->
+                        </div>
+                         
+                          <!-- food element from js -->
                       </div>
                     </div>
                   </div>
             
-            
-                  <div class="menu-category">
-                    <h3>Dinner</h3>
-                    <div class="menu-items">
-                      <div class="menu-item">
-                        <div class="placeholder"></div>
-                        <p>Item 1</p>
-                        <p>$10.00</p>
-                      </div>
 
-                    </div>
-                  </div>
-            
-            
-            
                   <div class="menu-category">
                     <h3>Lunch</h3>
                     <div class="menu-items">
@@ -95,7 +86,7 @@
   
               <script src="../js/localStorage.js"></script>
               <script src="../js/restaurant.js"></script>
-              <script src="../js/restaurants.js"></script>
+
               <script src="../js/auth.js"></script>
 </body>
 </html>

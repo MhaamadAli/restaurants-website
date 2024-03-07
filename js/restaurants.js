@@ -8,7 +8,7 @@ function generateRestaurantCards(restaurantsData) {
         const card = document.createElement('div')
         card.classList.add('card') 
         card.innerHTML = `
-            <img src="${restaurant.image}" class="card-img-top" alt="${restaurant.name}">
+            <img src="../styles/assets/${restaurant.image}" class="card-img-top" alt="${restaurant.name}">
             <div class="card-body">
             <h2 class="card-title" >${restaurant.name}</h2>
             <p class="card-text"><strong>Location:</strong> ${restaurant.location} </p>
@@ -19,7 +19,6 @@ function generateRestaurantCards(restaurantsData) {
 }
 
 function viewRestaurant(restaurantId) {
-
     window.location.href = `/pages/restaurant.html?id=${restaurantId}`
 }
 

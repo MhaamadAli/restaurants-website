@@ -50,10 +50,11 @@ let restaurants = [
         id: 1,
         name: "MNBV Restaurant",
         location: "beirut",
-        image: "./styles/assets/sushi.png",
+        image: "leila-restaurant.png",
         menu: [
             { item: "Item 1", price: 10 },
             { item: "Item 2", price: 15 },
+            { item: "Item 3", price: 35 },
         ],
         favoritesCount: 0
     },
@@ -61,7 +62,7 @@ let restaurants = [
         id: 2,
         name: "ABCD Restaurant",
         location: "Tyre",
-        image: "./styles/assets/image-asset.png",
+        image: "image-asset.png",
         menu: [
             { item: "Item 1", price: 12 },
             { item: "Item 2", price: 18 },
@@ -72,7 +73,7 @@ let restaurants = [
         id: 3,
         name: "RETYW Restaurant",
         location: "Beirut",
-        image: "./styles/assets/image-asset.png",
+        image: "image-asset.png",
         menu: [
             { item: "Item 1", price: 12 },
             { item: "Item 2", price: 18 },
@@ -83,7 +84,7 @@ let restaurants = [
         id: 4,
         name: "QWCRTY Restaurant",
         location: "Beirut",
-        image: "./styles/assets/image-asset.png",
+        image: "image-asset.png",
         menu: [
             { item: "Item 1", price: 12 },
             { item: "Item 2", price: 18 },
@@ -94,7 +95,7 @@ let restaurants = [
         id: 5,
         name: "Restaurant 2",
         location: "Location 2",
-        image: "./styles/assets/image-asset.png",
+        image: "image-asset.png",
         menu: [
             { item: "Item 1", price: 12 },
             { item: "Item 2", price: 18 },
@@ -105,7 +106,7 @@ let restaurants = [
         id: 6,
         name: "ZXC Restaurant",
         location: "Khalde",
-        image: "./styles/assets/image-asset.png",
+        image: "image-asset.png",
         menu: [
             { item: "Item 1", price: 12 },
             { item: "Item 2", price: 18 },
